@@ -965,9 +965,12 @@
 						emailjs.sendForm("sandeepgmail", "template_2wz7lov", this).then(
 							function () {
 								console.log("SUCCESS!");
+								alert("Successfully sent!")
 							},
 							function (error) {
 								console.log("FAILED...", error);
+								alert("Error!")
+
 							}
 						);
 					});
